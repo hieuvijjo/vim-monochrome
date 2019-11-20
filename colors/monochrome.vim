@@ -15,6 +15,8 @@ let g:colors_name = 'monochrome'
 
 let s:white  = ['White', 15]
 let s:black  = ['#0e1111', 16]
+let s:dark   = ['#303030', 236]
+let s:sblack   = ['#000000', 0]
 let s:bgray  = ['#181818', 233]
 let s:lgray  = ['LightGray', 255]
 let s:cgray  = ['#737373', 243]
@@ -84,8 +86,8 @@ call s:hi('ErrorMsg', s:white, s:red)
 call s:hi('NonText', s:dgray)
 
 " Folding.
-call s:hi('FoldColumn', s:dgray)
-call s:hi('Folded', s:black)
+call s:hi('FoldColumn', s:lgray, s:sblack)
+call s:hi('Folded', s:lgray, s:dark)
 
 " Line numbers gutter.
 call s:hi('LineNr', s:dgray)
